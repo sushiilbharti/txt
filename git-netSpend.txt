@@ -1,0 +1,30 @@
+git-netSpend
+
+==Steps for Check in checkout==
+1. Open cmd and go to git repository folder
+2. ''git stash save'' :- to save your changes first before taking pull
+3. ''git pull --rebase'' :- take pull from server
+4. ''git stash pop'' :- Apply your changes to latest pull
+5. ''git commit -am "Description"'' :- Commit your changes
+
+==Run B2C Steps==
+cmd
+C:\Projects\acquisition\direct
+''gulp --env=testc --tenant=halo''
+ 
+==GIT==
+''B2B'' = ssh://git.corp.netspend.com/srv/git/repositories/partner-acquisition.git
+''B2C'' = ssh://git.corp.netspend.com/srv/git/repositories/acquisition.git
+ 
+==URL==
+''B2C'' = http://localhost:9000/card-order/?context_name=truth_card_order
+''B2B Production'' = https://www-thetruthcard-church-a.test.aus.netspend.net/halo/#!/
+ 
+''Jira'' = https://jira.corp.netspend.com/browse/FE-5982
+''Crucible'' = https://crucible.corp.netspend.com/project/REVIEW
+ 
+==INVISION==
+B2c = https://netspend.invisionapp.com/share/5Y842DJBF#/screens
+ 
+hadru_a!ut2E
+ 

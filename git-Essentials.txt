@@ -1,0 +1,84 @@
+git Essentials
+
+==Initializing a Repository==
+
+===Step1: Create new project ===
+''cd C:'' - change drive
+''cd <projectFolder>''
+''git init'' - Git will track this directory for changes. hidden ''.git'' file will be created
+''git config --global user.name "User Name"''
+''git config --global user.email "user@email.com''''
+''git config --list'' - list the configuration file
+''ls -la .git'' - Display content of .git file
+
+===Step2: Maintain project===
+''git add .'' - Add or update existing all files
+''git commit -m "initial commit"'' - Commit changes with commentgit
+''git log'' - display log of all commits
+''gitk''
+''git status'' - display modified files or nothing to commit
+''git diff'' - display complete list of modification and deletion
+''git diff <filename>'' - display current file changes
+
+===Deleting files===
+''git rm <fileName>'' - File to delete
+
+===Renaming a file===
+Rename file in file explorer
+''git added <newRenameFileName>''
+''git rm <oldFileName>''
+''git status''
+
+===Moving file===
+''git mv <fileName> </DirecotryName/fileName>''
+''git status''
+
+===Undoing changes===
+''git checkout -- index.html'' - Undone specific file. ''--'' will effect current direcotyr file
+''git reset HEAD <fileName>'' - It wil reset ''HEAD'' point to the last commit and reset branch
+
+''git commit --amend <fileName>'' - If you want to amend last changes
+
+===Reset===
+''git reset --soft headname'' - No delete only reset working & repository direcotyr
+''git reset --mixed headname'' - Only change in Repository directory
+''git reset --hard headname'' - Changed working & repository both
+
+===Removing Untracked Files===
+''git clean -n'' - Display list of untracked files
+''git clean -f'' - forcily remove untracked files
+
+===Ignoring files .gitignore===
+notepad .gitignore
+*.php - ignore all php files
+!index.php - will not ignore this file
+
+''Ignore tracked file''
+1. First add in .gitignore file
+2. then git rm --cached <fileName> - It will remove from staging not from working direcotyr
+
+===Viewing Commits===
+''git log --online''
+
+===Branching===
+''cat .git/HEAD''
+''ls -la .git/refs/heads''
+''cat .git/refs/heads/master''
+''git branch <branchName>'' - Create new branch
+''git checkout <branchName'' - Activate branch
+''git commit -am "Description" '' ''a'' commit all changes
+
+===Compare Branches===
+''git branch <branchName>..<branchName>''
+
+
+===Mergeing Branches===
+1. Select branch
+2. ''git merge <brachNametoMerge>''
+
+===Stash: Saving changes in the stash===
+''git stash save "Description''
+''git stash pop'' - Bring back your changes to working directory
+''git stash apply'' - Bring back your changes and leave copy to stash location
+''git stash list'' - Display a list of stash
+

@@ -1,1 +1,1 @@
-This plugin has a few settings. If you create a file called Git.sublime-settings in your User package you can override them. Feel free to copy the Git.sublime-settings file from the Git package directory to your User package if you don't want to mess with getting the initial JSON syntax right.
+This plugin has a few settings. If you create a file called Git.sublime-settings in your User package you can override them.

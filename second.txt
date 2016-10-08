@@ -1,1 +1,4 @@
-It seems Google doubled-down on Material Design and hedged bets while seemingly placing priority on the all new web-component approach, Polymer. Angular-Material is its second officially backed Material Design implementation, obviously built on AngularJS (another Google project).
+It seems Google doubled-down on Material Design and hedged bets while seemingly placing priority on the all new web-component
+
+
+I made these changes to check diff command

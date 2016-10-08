@@ -1,1 +1,0 @@
-This plugin has a few settings. If you create a file called Git.sublime-settings in your User package you can override them.

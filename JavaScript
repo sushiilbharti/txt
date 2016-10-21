@@ -1,0 +1,253 @@
+http://www.tutorialspoint.com/javascript/javascript_operators.htm
+
+http://www.w3schools.com/jsref/default.asp
+
+http://developer.mozilla.org/en/Javascript/Reference
+
+===JavaScript Data Types===
+var length = 16;			// Number
+var lastName = "Johnson";	// String
+typeof false                 		// Returns ''boolean''
+var cars = ["Saab", "Volvo", "BMW"];     // Array
+var x = {firstName:"John", lastName:"Doe"};   // Object date
+person = undefined;          // Value is undefined, type is undefined
+var car = ""				// ''Empty Value'' ''The value is "", the typeof is "string"
+
+===Creating Elements===
+var myNewElement = document.createElement("li");
+
+myElement.appendChild(myNewElement);
+
+===Creating Text Nodes===
+var myText = document.createTextNode("New list item text");
+myNewElement.appendChild(myText);
+
+
+===Working with Attributes===
+myElement.getAttributes("align");
+
+===Array Methods===
+var multipleValues = [10,20,30,40,50];
+var reversedValues = multipleValues.reverse();
+var joinValues = multipleValues.join();
+var sortValues = multipleValues.sort();
+
+===getElement===
+document.getElementsByClassName('test');
+document.getElementsByClassName('red test');
+
+''Get all elements that have a class of 'test', inside of an element that has the ID of 'main'''
+document.getElementById('main').getElementsByClassName('test');
+
+document.getElementsByTagName("a");
+
+===Object Reaction===
+
+var player = new Object();
+player.name = "Fred";
+player.score = 10000;
+player.rank = 1;
+
+''Shorthand''
+var player = {name = "Fred", score = 10000, rank = 1};
+
+==========================================
+
+
+===IF Statements===
+if (expression 1){
+   Statement(s) to be executed if expression 1 is true
+}
+
+else if (expression 2){
+   Statement(s) to be executed if expression 2 is true
+}
+
+else if (expression 3){
+   Statement(s) to be executed if expression 3 is true
+}
+
+else{
+   Statement(s) to be executed if no expression is true
+}
+
+===FOR....LOOP===
+for ( var i = 1; i < 10; i++ ) {
+    document.write(i + "</br>");
+}
+You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch() statement.
+
+for (i = 0; i < 10; i++) {
+    if (i === 3) { ''break''; }
+    text += "The number is " + i + "<br>";
+}
+
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+for (i = 0; i < 10; i++) {
+    if (i === 3) { ''continue''; }
+    text += "The number is " + i + "<br>";
+}
+
+===DO...WHILE LOOP===
+
+whilte ( a < 10 ) {
+    document.write(a + "</br>");
+    a++;
+}
+
+
+do {
+    document.write(a + "</br>");
+    a++;
+} while ( a < 10 );
+
+===Switch Case===
+var grade='A';
+            document.write("Entering switch block<br />");
+            switch (grade)
+            {
+               case 'A': document.write("Good job<br />");
+               break;
+            
+               case 'B': document.write("Pretty good<br />");
+               break;
+            
+               case 'C': document.write("Passed<br />");
+               break;
+            
+               case 'D': document.write("Not so good<br />");
+               break;
+            
+               case 'F': document.write("Failed<br />");
+               break;
+            
+               default:  document.write("Unknown grade<br />")
+            }
+            document.write("Exiting switch block");
+            
+===While Loops===
+document.write("Starting Loop" + "<br />");
+            do{
+               document.write("Current Count : " + count + "<br />");
+               count++;
+            }
+            
+            while (count < 5);
+            document.write ("Loop stopped!");
+            
+===For Loop===
+document.write("Starting Loop" + "<br />");
+         
+            for(count = 0; count < 10; count++){
+               document.write("Current Count : " + count );
+               document.write("<br />");
+            }
+         
+            document.write("Loop stopped!");
+
+===Loop Control===
+document.write("Entering the loop<br /> ");
+         
+         while (x < 20)
+         {
+            if (x == 5){
+               break; // breaks out of loop completely
+            }
+            x = x + 1;
+            document.write( x + "<br />");
+         }
+         
+         document.write("Exiting the loop!<br /> ");
+       
+''continue...''         
+document.write("Entering the loop<br /> ");
+         
+            while (x < 10)
+            {
+               x = x + 1;
+               
+               if (x == 5){
+                  continue; // skip rest of the loop body
+               }
+               document.write( x + "<br />");
+            }
+         
+            document.write("Exiting the loop!<br /> ");
+         //-->
+         
+
+===JavaScript Statements===
+document.getElementById("demo").innerHTML = "Hello Dolly.";
+
+===JavaScript Data Types===
+
+
+
+===Variables ===
+var txt = "Test";
+var x = 5;
+var y = 6;
+var z = x + y;
+var linebreak = "<br />";
+
+
+
+
+
+==Operator==
+
+===Ternary Operator Example===
+
+var playerOne = 500;
+var playerTwo = 600;
+
+''condition ? true : false''
+var highScore = (playerOne > playerTwo) ? playerOne : playerTwo;
+
+===Arithmetic Operators===
++	Addition
+-	Subtraction
+*	Multiplication
+/	Division
+%	Modulus
+++	Increment
+--	Decrement
+
+''Examples''
+'' + - * /''
+(5 + 6) * 10
+x *10;
+"John" + " " + "Doe"
+
+===Comparison Operators===
+(A == B) -''Equal''
+(A != B) - ''Not Equal''
+(A > B) - ''Greater than''
+(A < B) - ''Less than''
+(A >= B) - ''Greater than or equal to''
+(A <= B) - ''Less than or equal to''
+
+===Logical Operators===
+(A && B) - ''Logical AND''
+A || B - ''Logical OR''
+! (A && B) - ''Logitcal Not''
+
+===Bitwise Operators===
+
+
+
+===JavaScript Assignment Operators===
+=	x = y	x = y
++=	x += y	x = x + y
+-=	x -= y	x = x - y
+*=	x *= y	x = x * y
+/=	x /= y	x = x / y
+%=	x %= y	x = x % y
+txt1 = "What a very ";
+txt1 += "nice day";
+''The result of txt1 will be:''
+What a very nice day
+
+var x = myFunction(4, 3);    
+
+============================================
